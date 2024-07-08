@@ -17,7 +17,7 @@ import { FileInterceptor } from '@nestjs/platform-express';
 // import { Roles } from 'src/decorators/roles.decorator';
 
 // @Roles('ADMIN', 'USER')
-// @UseGuards(AuthGuard)
+@UseGuards(AuthGuard)
 @Controller('users')
 export class UsersController {
   constructor(private readonly usersService: UsersService) {}
