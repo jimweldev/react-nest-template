@@ -1,4 +1,4 @@
-const nodeEnv: string = 'development';
+const nodeEnv: string = 'production';
 
 export default () => ({
   app: {
@@ -8,7 +8,7 @@ export default () => ({
   },
   database: {
     type: 'postgres' as const,
-    url: 'postgres://default:tOd0zVQM8kau@ep-billowing-dust-a4h7uo0h.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require',
+    url: 'postgres://default:v5yh0pTDPeaQ@ep-sweet-hill-a1hpt8bu.ap-southeast-1.aws.neon.tech:5432/verceldb?sslmode=require',
     ssl: {
       rejectUnauthorized: false,
     },
