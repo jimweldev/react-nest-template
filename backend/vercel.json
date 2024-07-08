@@ -15,5 +15,8 @@
       "dest": "/dist/main.js",
       "methods": ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"]
     }
-  ]
+  ],
+  "env": {
+    "PORT": "3000"
+  }
 }
