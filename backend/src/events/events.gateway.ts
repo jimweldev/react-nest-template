@@ -7,7 +7,7 @@ import {
 } from '@nestjs/websockets';
 import { EventsService } from './events.service';
 import { Socket, Server } from 'socket.io';
-import configuration from 'src/config/configuration';
+import configuration from '../config/configuration';
 
 interface UserSocket {
   socketId: string;
