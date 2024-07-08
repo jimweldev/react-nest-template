@@ -1,0 +1,36 @@
+/* private layout */
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+  display: flex;
+}
+
+.wrapper .sidebar {
+  flex: 260px 0 0;
+  transition: all 300ms ease-in-out;
+}
+
+.wrapper .sidebar.collapsed {
+  margin-left: -260px;
+}
+
+.wrapper .main {
+  flex: 1;
+  height: 100%;
+}
+
+@media (max-width: 992px) {
+  .wrapper .main {
+    min-width: 100%;
+  }
+
+  .wrapper .sidebar {
+    margin-left: -260px;
+  }
+
+  .wrapper .sidebar.collapsed {
+    margin-left: 0;
+  }
+}
