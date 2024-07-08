@@ -9,7 +9,7 @@ async function bootstrap() {
   app.setGlobalPrefix(configuration().app.globalPrefix, { exclude: [''] });
   app.use(cookieParser());
   app.enableCors({
-    origin: true,
+    origin: ['https://react-nest-template.vercel.app', 'http://localhost:3000'],
     credentials: true,
   });
 
