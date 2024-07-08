@@ -1,4 +1,4 @@
-const nodeEnv: string = 'production';
+const nodeEnv: string = 'development';
 
 export default () => ({
   app: {
