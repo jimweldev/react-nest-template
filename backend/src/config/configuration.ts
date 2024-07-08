@@ -4,6 +4,7 @@ export default () => ({
   app: {
     nodeEnv,
     port: 3000,
+    socketPort: 3001,
     globalPrefix: 'api',
   },
   database: {
