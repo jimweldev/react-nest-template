@@ -6,7 +6,7 @@ import { UsersModule } from './users/users.module';
 import { AuthModule } from './auth/auth.module';
 import configuration from './config/configuration';
 import { ConfigModule } from '@nestjs/config';
-import { EventsModule } from './events/events.module';
+// import { EventsModule } from './events/events.module';
 
 @Module({
   imports: [
