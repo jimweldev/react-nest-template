@@ -16,7 +16,7 @@ import { EventsModule } from './events/events.module';
     TypeOrmModule.forRoot(configuration().database),
     UsersModule,
     AuthModule,
-    EventsModule,
+    // EventsModule,
   ],
   controllers: [AppController],
   providers: [AppService],
