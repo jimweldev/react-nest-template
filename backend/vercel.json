@@ -5,9 +5,7 @@
       "src": "src/main.ts",
       "use": "@vercel/node",
       "config": {
-        "includeFiles": ["dist/**/*.js", "dist/**/*.json", ".env"],
-        "memory": 1024,
-        "maxDuration": 30
+        "includeFiles": ["dist/**/*.js", "dist/**/*.json", ".env"]
       }
     }
   ],
