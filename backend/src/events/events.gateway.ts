@@ -17,7 +17,6 @@ interface UserSocket {
 @WebSocketGateway(configuration().app.socketPort, {
   cors: {
     origin: '*',
-    credentials: true,
   },
 })
 export class EventsGateway {
