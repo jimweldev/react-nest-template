@@ -14,7 +14,7 @@ async function bootstrap() {
     credentials: true,
   });
 
-  app.useWebSocketAdapter(new IoAdapter(app));
+  // app.useWebSocketAdapter(new IoAdapter(app));
   await app.listen(configuration().app.port);
 
   console.log(`Application is running`);
