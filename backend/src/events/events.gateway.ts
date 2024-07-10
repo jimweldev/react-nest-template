@@ -15,8 +15,11 @@ interface UserSocket {
 }
 
 @WebSocketGateway({
-  origin: '*',
-  credentials: true,
+  cors: {
+    origin: 'https://react-nest-template.vercel.app',
+    methods: ['GET', 'POST'],
+    credentials: true,
+  },
 })
 export class EventsGateway {
   constructor(private readonly eventsService: EventsService) {}
