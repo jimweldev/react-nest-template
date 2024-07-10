@@ -18,7 +18,6 @@ interface UserSocket {
   cors: {
     origin: 'https://react-nest-template.vercel.app',
     methods: ['GET', 'POST', 'OPTIONS', 'WS', 'WSS'],
-    credentials: true,
   },
 })
 export class EventsGateway {
