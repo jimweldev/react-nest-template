@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { Outlet } from "react-router-dom";
 import { Socket, io } from "socket.io-client";
 
-const socket: Socket = io(import.meta.env.VITE_SOCKET_BASE_URL);
+const socket: Socket = io(import.meta.env.VITE_API_BASE_URL);
 
 const PrivateLayout = () => {
   useEffect(() => {
