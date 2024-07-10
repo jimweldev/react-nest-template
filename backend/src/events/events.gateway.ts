@@ -17,7 +17,6 @@ interface UserSocket {
 @WebSocketGateway({
   cors: {
     origin: 'https://react-nest-template.vercel.app',
-    methods: ['GET', 'POST'],
     credentials: true,
   },
 })
