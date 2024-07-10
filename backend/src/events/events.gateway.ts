@@ -14,7 +14,10 @@ interface UserSocket {
   userId: string;
 }
 
-@WebSocketGateway()
+@WebSocketGateway({
+  origin: '*',
+  credentials: true,
+})
 export class EventsGateway {
   constructor(private readonly eventsService: EventsService) {}
 
