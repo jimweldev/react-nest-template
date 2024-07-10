@@ -14,11 +14,7 @@ interface UserSocket {
   userId: string;
 }
 
-@WebSocketGateway(configuration().app.socketPort, {
-  cors: {
-    origin: '*',
-  },
-})
+@WebSocketGateway()
 export class EventsGateway {
   constructor(private readonly eventsService: EventsService) {}
 
