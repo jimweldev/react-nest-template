@@ -14,5 +14,9 @@
       "src": "/(.*)",
       "dest": "src/main.ts"
     }
-  ]
+  ],
+  "limits": {
+    "duration": 30,
+    "maxMemory": 1024
+  }
 }
